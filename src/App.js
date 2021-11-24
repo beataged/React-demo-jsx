@@ -3,9 +3,9 @@ import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Nav from './components/Nav';
 import Header from './components/Header';
-import Content from './components/Content';
 import Footer from './components/Footer';
 import About from './components/About';
+import Main from './components/Main';
 
 
 class App extends React.Component {
@@ -16,7 +16,7 @@ class App extends React.Component {
           <Nav />
           <Header />
           <Routes>
-            <Route path="/" element={<Content />} />
+            <Route path="/" element={<Main />} />
             <Route path="/" element={<About />} />
 
           </Routes>
